@@ -1,0 +1,44 @@
+/* CC - mudar*/
+/*ajustes da disposição da imagem e da introdução e suas proporções na página*/
+.introducao {
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    align-items: center;
+  }
+  
+  /*modificando o texto da introdução: é dividido o valor da fonte no figma/16 para chegar na unidade rem e ficar proporcional ao design/protótipo*/
+  .introducao h1 {
+    font-size: 4.5rem;
+    line-height: 1.125;
+    margin-bottom: 30px;
+  }
+  
+  .introducao p {
+    font-size: 1.5rem;
+    color: #525252;
+  }
+  @media (max-width: 1000px) {
+    .introducao h1 {
+      font-size: 2rem;
+    }
+  
+    .introducao h1::before{
+      width: 100px;
+      height: 50px;
+      left:30px;
+    }
+  
+    .introducao img {
+      display: none;
+    }
+  }
+  /* media querie é um ajuste da tela a outros tamanhos, a imagem diminui proporcionalmente quando diminui a tela*/
+  @media (max-width: 800px){
+    .introducao{
+      grid-template-columns: 1fr;
+    }
+  }

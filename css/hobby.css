@@ -1,0 +1,47 @@
+.hobby {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+
+.hobby-container {
+  max-width: 1200px;
+  padding: 120px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  position: relative;
+}
+
+.hobby-container::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../img/detalhe.svg") no-repeat center;
+  position: absolute;
+  bottom: -50px;
+  left: 20px;
+}
+
+.hobby .subtitulo {
+  color: #e0e0e0;
+}
+
+.hobby.descricao {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: #525252;
+}
+.hobby.descricao strong {
+  color: #141414;
+  font-size: 0.875;
+  line-height: 1.4;
+}
+

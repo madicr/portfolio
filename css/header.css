@@ -1,0 +1,54 @@
+.header {
+    max-width: 1200px;
+    /* */
+    padding: 40px 20px;
+    /*  margem pra desgrudar a logo (ou o nome) da esquerda */
+    margin: 0 auto;
+    /* alinhar as margens na página, deixa centralizado */
+    display: flex;
+    /* coloca lado a lado */
+    justify-content: space-between;
+    /* distribui os itens com um espaço entre eles */
+    align-items: center;
+    /* tira eles de um acima do outro e coloca-os lado a lado */
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    /* coloca um espaço entre os itens do menu que estão lado a lado, pra nao se sobreporem */
+    justify-content: center;
+    /* centraliza o menu quando o tamanho da página é modificado pelo usuario / aparelho */
+
+}
+
+.menu a {
+    font-size: 1.125rem;
+    /*uma unidade de medida que pega a fonte do figma e calcula ela para ficar proporcional */
+    line-height: 1.3;
+    padding: 10px 20px;
+    /* aumenta a area dos itens para facilitar o click*/
+    text-decoration: none;
+    color: #141414;
+    display: block;
+    
+}
+
+.header a {
+    background-color: rgb(180, 130, 226);
+}
+
+.header a:hover { /* altera os botões quando o mouse passa em cima*/
+background-color: rgb(144, 37, 206); 
+transition: 0.4s;
+opacity: 1;
+}
+
+@media (max-width:800px) { /* altera o layout quando a tela diminui*/
+    .header {
+        flex-direction: column;
+        gap: 40px;
+        padding: 20px;
+    }
+}
